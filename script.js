@@ -218,6 +218,7 @@ const action = function (onoff) {
     document.querySelector("input").classList.add("on");
     document.querySelector("input").placeholder = "calculate...";
     document.querySelector(".onLight").classList.add("on-green");
+    document.querySelector(".onoff").classList.add("onoffr");
   } else {
     string = "";
     document.querySelector("input").value = string;
@@ -225,6 +226,7 @@ const action = function (onoff) {
     document.querySelector("input").placeholder = "";
     document.querySelector(".onLight").classList.remove("on-green");
     document.querySelector(".offLight").classList.add("alert");
+    document.querySelector(".onoff").classList.remove("onoffr");
     // document.querySelector(".input").classList.add("off");
     // document.querySelector(".offLight").classList.add("alert");
     setTimeout(() => {
