@@ -33,14 +33,17 @@
 .container{
     background-color: rgb(128, 162, 162);
     width: 20rem;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* height: 70vh; */
-    height: 80vh;
+    /* height: 80vh; */
+    /* padding: 1rem; */
+    height: 100%;
+    
 }
 
 .inner-container{
@@ -51,8 +54,12 @@
     justify-content: center;
     align-items: center;
     /* height: 70vh; */
-    height: 77vh;
+    /* height: 77vh; */
     box-shadow: 2px 5px 6px rgb(62, 57, 57);
+    padding: 4rem 1rem;
+    height: 100%;
+    filter: brightness(96%);
+    
 }
 
 .pressed{

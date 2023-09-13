@@ -38,6 +38,7 @@ document.addEventListener("keydown", (e) => {
   //   console.log("Key pressed:", e.key); // Debugging log
 
   if (onoff) {
+    console.log(e.key);
     if (e.key === "Enter") {
       string = eval(string);
     } else if (e.key === "C" || e.key === "c") {
@@ -58,7 +59,8 @@ document.addEventListener("keydown", (e) => {
       e.key === "-" ||
       e.key === "*" ||
       e.key === "/" ||
-      e.key === "."
+      e.key === "." ||
+      e.key === "0"
     ) {
       string += e.key;
     }
