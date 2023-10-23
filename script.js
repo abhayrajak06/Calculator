@@ -10,35 +10,16 @@ Array.from(buttons).forEach((button) => {
       } else if (e.target.innerHTML == "←") {
         string = string.substring(0, string.length - 1);
       } else {
-        console.log(e.target);
         string += e.target.innerHTML;
       }
       document.querySelector("input").value = string;
       pressedKey(e.target.innerHTML);
     }
-    // action();
   });
 });
 
-// document.addEventListener("keypress", (e) => {
-//   if (e.key == "Enter") {
-//     string = eval(string);
-//   } else if (e.key == "C" || e.key == "c") {
-//     string = "";
-//   } else if (e.key === "Backspace") {
-//     // string = string.substring(0, string.length - 1);
-//     string = string.slice(0, -1);
-//   } else {
-//     console.log(e.target);
-//     string += e.key;
-//   }
-//   document.querySelector("input").value = string;
-// });
 document.addEventListener("keydown", (e) => {
-  //   console.log("Key pressed:", e.key); // Debugging log
-
   if (onoff) {
-    console.log(e.key);
     if (e.key === "Enter") {
       string = eval(string);
     } else if (e.key === "C" || e.key === "c") {
@@ -235,7 +216,6 @@ let gate = document.querySelector(".onoff").addEventListener("click", () => {
   if (onoff) offSound();
   else offSound();
   action(onoff);
-  console.log(onoff);
 });
 
 const action = function (onoff) {
